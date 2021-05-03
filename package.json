@@ -1,0 +1,25 @@
+{
+  "name": "gatways",
+  "version": "1.0.0",
+  "description": "This sample project is managing gateways - master devices that control multiple peripheral devices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "server": "nodemon index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.5",
+    "path-parser": "^6.1.0",
+    "react-masked-input-text": "^1.0.13"
+  }
+}
