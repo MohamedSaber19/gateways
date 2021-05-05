@@ -45,7 +45,6 @@ export default function GatewayForm() {
   };
 
   const handleDeviceInfoChange = (name, value) => {
-    console.log(name, value);
     setDeviceInfo({
       ...deviceInfo,
       [name]: value,
